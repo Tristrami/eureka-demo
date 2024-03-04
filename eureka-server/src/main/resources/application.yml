@@ -1,6 +1,9 @@
 server:
   port: 8761
 eureka:
+  server:
+    responseCacheAutoExpirationInSeconds: 30
   client:
+    registry-fetch-interval-seconds: 30
     register-with-eureka: false
     fetch-registry: false
